@@ -1,0 +1,27 @@
+{
+  "systemProperties": {
+    "java.version": "24",
+    "java.vendor": "Oracle Corporation",
+    "os.name": "Linux"
+  },
+  "springProfiles": {
+    "active": ["dev", "db-local"],
+    "default": ["default"]
+  },
+  "logLevels": {
+    "ROOT": "INFO",
+    "org.hibernate.SQL": "DEBUG",
+    "org.springframework.web": "INFO"
+  },
+  "datasources": {
+    "primary": {
+      "url": "jdbc:postgresql://localhost:5432/devdb",
+      "username": "devuser",
+      "maximumPoolSize": 10
+    }
+  },
+  "hibernate": {
+    "hbm2ddl.auto": "update",
+    "show_sql": "true"
+  }
+}
